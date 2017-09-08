@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-	<link rel="shortcut icon" href="/">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="/">
     <title> Hoo-ray ! , B E E R   </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src='build/main.bundle.js'></script>
+
 </head>
-<script src="build/main.bundle.js"></script>
 <style>
  #example1 {
     background-image:url(b.jpg);
@@ -25,21 +27,34 @@
 }
 
 
+
     </style>
 <body>
-    <div class="container">
+
+<body>
+<div class="container" style="background-color:#FAF0E6 "><center>
             <div id="example1"> 
-                 <h2>Beer Searching <i class="fa fa-beer "></i></h2><hr>
-            </div>                    
+                <h1 style="font-size: 50px"> Beer Searching <i class="fa fa-beer "></i></h1><hr>
+            </div> 
+  
+   
+   
       
-        <p></p>
-        <form>
-          <div class="form-group">
-            <label for="usr">Beers Name:</label>
-            <input type="text" class="form-control" id="usr" style="width:50%">
-          </div>
-          <button type="button" class="btn btn-default btn-lg btn-block"style="width:50%">Search</button>
-        </form>
-      </div>
+          <h5><label>Beer's Name:</label><input type="text" id="beer-name" class="form-control" style="width:50%" > <br>
+          <label>Beer's Yeast :</label><input type="text" id="beer-yeast" class="form-control" style="width:50%"></h5>
+          <button onclick="toSearch(document.getElementById('beer-name').value,document.getElementById('beer-yeast').value)" class="btn btn-default btn-lg btn-block" style="width:50%" >Search</button>
+
+       <br>
+   </center><hr>
+  <p id="result"></p>
+   
+  
+ 
+
+     
+    </div>
+
+  
 </body>
+
 </html>
